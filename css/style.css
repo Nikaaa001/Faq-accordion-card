@@ -19,11 +19,10 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 327px;
-    height: 535px;
     border-radius: 23px;
     background: #FFF;
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.50);
-    padding: 0 24px 0 25px;
+    padding: 132px 24px 48px 25px;
 }
 
 .ilustration-mob {
@@ -38,9 +37,17 @@ body {
 }
 
 .shadow {
+    position: absolute;
     width: 240px;
-    height: 145px;
+    height: 104px;
     top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.faq-drop-cont {
+    width: 100%;
 }
 
 .faq {
@@ -85,11 +92,6 @@ body {
     line-height: normal;
 }
 
-.drop-down-title:hover {
-    cursor: pointer;
-    color: #F47B56;
-}
-
 .arrow-down {
     width: 8px;
     height: 4px;
@@ -110,4 +112,64 @@ body {
 .arrow-down-active {
     rotate: 180deg;
     transition-duration: 1s;
+}
+
+
+
+.ilustration-desktop {
+    display: none;
+}
+
+.ilustration-box {
+    display: none;
+}
+
+.pattern-desktop {
+    display: none;
+}
+
+
+
+@media (min-width: 930px) {
+
+    .main-cont {
+        display: flex;
+        flex-direction: row;
+        width: 871px;
+        height: 509px;
+    }
+
+    .ilustration-mob {
+        display: none;
+    }
+
+    .shadow {
+        display: none;
+    }
+
+    .drop-down-title:hover {
+        cursor: pointer;
+        color: #F47B56;
+    }
+
+    .drop-down:hover {
+        cursor: pointer;
+    }
+
+    .drop-down:hover .drop-down-title {
+        cursor: pointer;
+        color: #F47B56;
+    }
+
+    .faq-drop-cont {
+        width: 350px;
+        margin-right: 0;
+    }
+
+    .pattern-desktop {
+        margin-left: -300px;
+        display: block;
+        overflow: hidden;
+    }
+
 }
