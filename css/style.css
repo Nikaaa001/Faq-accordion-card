@@ -15,6 +15,9 @@ body {
 
 .main-cont {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 327px;
     height: 535px;
     border-radius: 23px;
@@ -34,6 +37,12 @@ body {
     z-index: 2;
 }
 
+.shadow {
+    width: 240px;
+    height: 145px;
+    top: 0;
+}
+
 .faq {
     margin-top: 28px;
     color: #1E1F36;
@@ -41,6 +50,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-align: center;
 }
 
 .drop-downs-main-cont {
@@ -83,6 +93,7 @@ body {
 .arrow-down {
     width: 8px;
     height: 4px;
+    transition-duration: 1s;
 }
 
 .drop-down-value {
@@ -94,4 +105,9 @@ body {
     line-height: 18px;
     text-align: left;
     display: none;
+}
+
+.arrow-down-active {
+    rotate: 180deg;
+    transition-duration: 1s;
 }
