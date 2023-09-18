@@ -135,8 +135,11 @@ body {
     .main-cont {
         display: flex;
         flex-direction: row;
-        width: 871px;
-        height: 509px;
+        justify-content: space-between;
+        width: 825px;
+        height: 444.1px;
+        overflow: hidden;
+        padding: 65px 95px 0 0;
     }
 
     .ilustration-mob {
@@ -163,13 +166,28 @@ body {
 
     .faq-drop-cont {
         width: 350px;
-        margin-right: 0;
     }
 
     .pattern-desktop {
-        margin-left: -300px;
+        margin-left: -576px;
+        margin-top: -294px;
         display: block;
-        overflow: hidden;
+        width: 964px;
+        height: 944px;
+    }
+
+    .ilustration-desktop {
+        position: absolute;
+        display: block;
+        left: -84px;
+    }
+
+    .ilustration-box {
+        position: absolute;
+        display: block;
+        left: -100px;
+        top: 197px;
+        overflow: none;
     }
 
 }
